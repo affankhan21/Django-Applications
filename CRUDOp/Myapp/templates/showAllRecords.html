@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: darkkhaki;
+    }
+</style>
+<body>
+   <center>
+<h1>STUDENT INFORMATION</h1>
+<a href="addStudent">ADD STUDENT</a>
+<hr/>
+<table border="2">
+   
+    <tr><th>STUDENT ID</th><th>STUDENT NAME</th><th>STUDENT AGE</th><th>STUDENT PERCENTAGE</th><th>STUDENT LOCATION</th><th>Edit</th><th>Delete</th></tr>
+{%for stud in student%}
+<tr><td>{{stud.id}}</td>
+    <td>{{stud.sname}}</td>
+    <td>{{stud.age}}</td>
+    <td>{{stud.percentage}}</td>
+    <td>{{stud.location}}</td>
+<td><a href="editStudent/{{stud.id}}">Edit</a></td>
+<td><a href="deleteStudent/{{stud.id}}">Delete</a></td</tr>
+{%endfor%}
+</table>
+</center>
+</body>
+</html>

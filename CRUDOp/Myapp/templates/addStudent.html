@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: darkkhaki;
+        }
+        </style>
+</head>
+<body>
+    <form method="post">
+        {%csrf_token%}
+        <center>
+        <table border="2">
+            <tr>
+                <td>ENTER STUDENT NAME</td>
+                <td><input type ="text" name="sname" required/></td>
+            </tr>
+            <tr>
+                <td>ENTER STUDENT AGE</td>
+                <td><input type ="text" name="age"required/></td>
+            </tr>
+            <tr>
+                <td>ENTER PERCENTAGE</td>
+                <td><input type ="text" name="percentage"required/></td>
+            </tr>
+            <tr>
+                <td>ENTER LOCATION</td>
+                <td><input type ="text" name="location"required/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="ADDSTUDENT" /><td>
+            </tr>
+        </center>
+        </table>
+
+
+        </form>
+
+    
+</body>
+</html>

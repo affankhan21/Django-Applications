@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: darkkhaki;
+        }
+        </style>
+</head>
+<body>
+    <h1>DELETE CONFIRMATION PAGE</h1>
+    <form method="post">
+        {%csrf_token%}
+        <center>
+        <table border="2">
+            <tr>
+                <td>ARE YOU SURE YOU WANT TO DELETE?</td>
+            
+               </tr>
+                <td><input type="submit" name="action" value="yes" /><td>
+                    <td><input type="submit" name="action" value="no" /><td></td>
+            </tr>
+        </center>
+        </table>
+
+
+        </form>
+
+    
+</body>
+</html>
